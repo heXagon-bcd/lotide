@@ -17,7 +17,7 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(sentence) {
 let sentenceCount = {};
   for(letter of sentence) {
-    const element = sentence[letter];
+    //const element = sentence[letter];
     sentenceCount[letter] = (sentenceCount[letter] || 0) + 1;
   }
    console.log("expected Object", sentenceCount[' '])
@@ -27,9 +27,7 @@ let sentenceCount = {};
   //     console.log(sentenceCount[space]);
   //   }
   //}
-  if((Object.keys(sentenceCount)) === ' ') {
-    delete sentenceCount[space];
-  }
+    delete sentenceCount[' '];
 return sentenceCount
 }
 
