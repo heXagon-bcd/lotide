@@ -15,9 +15,5 @@ const tail = function(arr) {
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 
-function isEqual(a , b) {
-  if()
-}
-
 
 assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
