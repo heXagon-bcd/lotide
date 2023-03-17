@@ -4,14 +4,14 @@
  */
 
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if ((actual === expected)) {
-    console.log(`✅✅✅ assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 assertion failed: ${actual} != ${expected}`);
-  }
+// const assertEqual = function(actual, expected) {
+//   if ((actual === expected)) {
+//     console.log(`✅✅✅ assertion passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑 assertion failed: ${actual} != ${expected}`);
+//   }
 
-};
+// };
 /**
  * This function will conver all values in array to a single string to see if values match
  * 
@@ -20,13 +20,15 @@ const assertEqual = function(actual, expected) {
  * @param {*} str2 
  * @returns 
  */
-const eqArrays = function(str1, str2) {
-  if (JSON.stringify(str1) === JSON.stringify(str2)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// const eqArrays = function(str1, str2) {
+//   if (JSON.stringify(str1) === JSON.stringify(str2)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+const {eqArrays, assertEqual} = require('./eqArrays')
 
 // ACTUAL FUNCTION
 const middle = function(array) {
@@ -43,10 +45,10 @@ const middle = function(array) {
   //if there is a middle number take the floor and ceil of the string
 }
 
-console.log(middle([1, 2, 3, 4, 5]));
-console.log(middle([1, 2, 3, 4]));
-console.log(eqArrays(middle([1, 2, 3, 4, 5]), [3]))
-console.log(eqArrays(middle([1, 2, 3, 4]), [2, 3]))
+module.exports = {eqArrays, assertEqual, middle};
 
-
-console.log([1, 2, 3, 4].slice(1, 3));
+// console.log(middle([1, 2, 3, 4, 5]));
+// console.log(middle([1, 2, 3, 4]));
+// console.log(eqArrays(middle([1, 2, 3, 4, 5]), [3]))
+// console.log(eqArrays(middle([1, 2, 3, 4]), [2, 3]))
+// console.log([1, 2, 3, 4].slice(1, 3));
