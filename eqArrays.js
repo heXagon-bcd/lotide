@@ -3,15 +3,17 @@
  * @return {assert pass or fail}
  */
 
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if ((actual === expected)) {
-    console.log(`✅✅✅ assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 assertion failed: ${actual} != ${expected}`);
-  }
+// // FUNCTION IMPLEMENTATION
+// const assertEqual = function(actual, expected) {
+//   if ((actual === expected)) {
+//     console.log(`✅✅✅ assertion passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑 assertion failed: ${actual} != ${expected}`);
+//   }
 
-};
+// };
+
+const assertEqual = require('./assertEqual')
 
 const eqArrays = function(str1, str2) {
   if (JSON.stringify(str1) === JSON.stringify(str2)) {
@@ -20,13 +22,9 @@ const eqArrays = function(str1, str2) {
     return false;
   }
 }
-
-// TEST CODE
-//assertEqual("Lighthouse Labs", "Bootcamp");
-//assertEqual(1, 1);
-//assertEqual([1, 2, 3],[1, 2, 3])
+module.exports = {eqArrays, assertEqual};
 
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3])) // => true
+// console.log(eqArrays([1, 2, 3], [1, 2, 3])) // => true
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
