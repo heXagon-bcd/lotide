@@ -35,7 +35,7 @@ console.log(findKey({
   "noma":      { stars: 2 },
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
+  "Akelarre":  { stars: 3 } 
 }, x => x.stars=== 2)) // => "noma" // x.stars === callback truthy
 // try to solve with pseudo code
 // dont create variables that we dont need

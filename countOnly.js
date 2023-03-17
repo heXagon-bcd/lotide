@@ -45,7 +45,7 @@ const countOnly = function(allItems, itemsToCount) {
     console.log("test",elementCounts);
     }
   for(nm in itemsToCount) {
-    if (itemsToCount[nm] === false) {
+    if (itemsToCount[nm] ===   false) {
       console.log("nm",elementCounts[nm]);
       delete elementCounts[nm];
     }
@@ -53,7 +53,7 @@ const countOnly = function(allItems, itemsToCount) {
   return elementCounts
 }
 
-//console.log(countOnly(firstNames))
+console.log(countOnly(firstNames))
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
