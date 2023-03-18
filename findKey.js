@@ -1,12 +1,12 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if ((actual === expected)) {
-    console.log(`✅✅✅ assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 assertion failed: ${actual} != ${expected}`);
-  }
+// // FUNCTION IMPLEMENTATION
+// const assertEqual = function(actual, expected) {
+//   if ((actual === expected)) {
+//     console.log(`✅✅✅ assertion passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑 assertion failed: ${actual} != ${expected}`);
+//   }
 
-};
+// };
 
 /**
  * Implement the function findKey which takes in an object and a callback. It should scan the object and
@@ -29,14 +29,19 @@ for(i = 0; i < Object.keys(object).length; i++) {
 return undefined; //if no key is found, then return undefined
 }
 
-console.log(findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 } 
-}, x => x.stars=== 2)) // => "noma" // x.stars === callback truthy
+module.exports = findKey;
+
+// console.log(findKey({
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 } 
+// }, x => x.stars=== 2)) // => "noma" // x.stars === callback truthy
+
+
+
 // try to solve with pseudo code
 // dont create variables that we dont need
 // research of objects ==> javascript fundamentals

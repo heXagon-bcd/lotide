@@ -13,13 +13,13 @@
  */
 
 // array equal function
-const eqArrays = function(str1, str2) {
-  if (JSON.stringify(str1) === JSON.stringify(str2)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// const eqArrays = function(str1, str2) {
+//   if (JSON.stringify(str1) === JSON.stringify(str2)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
 //woorking
 const letterPositions = function(sentence) {
@@ -34,8 +34,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-console.log(letterPositions("lighthouse in the house"))
-console.log(eqArrays(letterPositions("hello").e, [1]));
+module.exports = letterPositions
+
+// console.log(letterPositions("lighthouse in the house"))
+// console.log(eqArrays(letterPositions("hello").e, [1]));
 
 
 //TESTs below
