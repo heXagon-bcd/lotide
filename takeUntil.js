@@ -23,3 +23,5 @@ const takeUntil = function(array, callback) {
   }
   return arr1;//  return if false
 };
+
+module.exports = takeUntil;
