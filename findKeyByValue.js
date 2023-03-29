@@ -27,3 +27,5 @@ const findKeyByValue = function(obj, show) {
   }
   return arr[0];// ask dev to review this🛑🛑🛑
 };
+
+module.exports = {findKeyByValue};
