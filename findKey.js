@@ -12,15 +12,13 @@
 
 const findKey = function(object, callback) {
 
-for(i = 0; i < Object.keys(object).length; i++) {
-  let key = Object.keys(object)[i];
-  console.log("a", key);
-  console.log("b", object[key]);
-  if(callback(object[key])) {
-   return key
+  for (let i = 0; i < Object.keys(object).length; i++) {
+    let key = Object.keys(object)[i];
+    if (callback(object[key])) {
+      return key;
+    }
   }
-}
-return undefined; //if no key is found, then return undefined
+  return undefined; //if no key is found, then return undefined
 };
 
 module.exports = findKey;
