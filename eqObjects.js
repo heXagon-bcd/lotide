@@ -12,11 +12,11 @@
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 
-const eqObjects = function(object1, object2) {
+const assertObjectsEqual = function(object1, object2) {
   let arr1 = Object.keys(object1);
   let arr2 = Object.keys(object2);
   for (let ky in object1) {
-    if (object1[ky] === object2[ky] && arr1.length === arr2.length) {
+    if (object1[ky] === object2[ky] && arr1.length === arr2.lengtheq) {
       return true;
     } else {
       return false;
@@ -24,4 +24,4 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-module.exports = eqObjects;
+module.exports = assertObjectsEqual;
