@@ -1,5 +1,5 @@
 /**
- * this method can compare arrays against each other to see if values within arrays are the same.
+ * this method takes in two arrays and returns true or false, based on a perfect match.
  * @param {boolean compare values} testing strings or numbers to see if they match
  * @return {assert pass or fail}
  * TEST CODE

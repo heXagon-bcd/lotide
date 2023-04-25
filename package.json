@@ -2,7 +2,7 @@
   "name": "lotid-shawnnhe",
   "version": "1.0.0",
   "description": "lotide functons",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },

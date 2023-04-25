@@ -1,13 +1,9 @@
 /**
- * @param {string} the function takes in a setence as a string and return a count  of the letters int he sequence
- * Step 1 Create Function
- * Step 2 Create an empty Object
- * Step 3 Loop trough each string character
+ * @param {string} the take in a sentence (as a string) and then return a count of each of the letters in 
  * EXAMPLE
  * console.log(countLetters('hello shawn'));
  */
 
-const assertEqual = require("./assertEqual");
 const countLetters = function(sentence) {
   let sentenceCount = {};
   for (let letter of sentence) {

@@ -1,3 +1,3 @@
-const {eqArrays, assertEqual, middle} = require('../middle')
+const _ = require('../index')
 
-console.log(eqArrays(middle([1, 2, 3, 4, 5]), [3]))
+console.log("a",(_.middle([1, 2, 3, 4, 5])))
