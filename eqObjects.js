@@ -1,27 +1,23 @@
-/**
- * This method will detmerine if objects have the same values
- * @param {object}input first object that you want to compare
- * @param {object}input second object that you want to compare
- * @return {assert pass or fail}
- * TEST
- * const shirtObject = { color: "red", size: "medium" };
- * const anotherShirtObject= { size: "medium", color: "red" };
- * eqObjects(shirtObject , anotherShirtObject); // => true
- */
+// function that takes in an object and a value and returns the first key that corresponds to that value.
+const eqArrays = require('./eqArrays');
 
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
-
-const assertObjectsEqual = function(object1, object2) {
+const eqObjects = function(object1, object2) {
   let arr1 = Object.keys(object1);
   let arr2 = Object.keys(object2);
-  for (let ky in object1) {
-    if (object1[ky] === object2[ky] && arr1.length === arr2.lengtheq) {
-      return true;
-    } else {
-      return false;
+
+  if(arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let key of arr1) {
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
+      if (!eqArrays(object1[key], object2[key])) {
+        return false;
+      }
+    } else if (object1[key] !== object2[key]) {
+        return false;
     }
   }
+  return true;
 };
 
-module.exports = assertObjectsEqual;
+module.exports = eqObjects;

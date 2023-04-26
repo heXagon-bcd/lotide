@@ -1,18 +1,10 @@
-/**
- * this method takes in two arrays and returns true or false, based on a perfect match.
- * @param {boolean compare values} testing strings or numbers to see if they match
- * @return {assert pass or fail}
- * TEST CODE
- * console.log(eqArrays([1, 2, 3], [1, 2, 3])) // => true
- * assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
- */
-
-const eqArraysAssert = function(str1, str2) {
+//function that prints an appropriate message after comparing the two arrays.
+const assertArraysEqual = function(str1, str2) {
   if (JSON.stringify(str1) === JSON.stringify(str2)) {
-    return true;
+    return `These two arrays are a perfect match!`;
   } else {
-    return false;
+    return 'These two arrays are not a match';
   }
 };
 
-module.exports = eqArraysAssert;
+module.exports = assertArraysEqual;

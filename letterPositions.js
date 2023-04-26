@@ -1,18 +1,4 @@
-/** Create a function which will return all the indice(zero based postions) in the  string which each chracter is found
- * For each letter, instead of returning just one number to represent its number of occurances, mutliple numbers may be needed to represent all the
- * places that it shows up
- * @param {setence} input your sentence here
- * @return {object} object key-value pair of where positioning string character appears in a sentence
- * TEST
- * console.log(letterPositions("lighthouse in the house"))
- * console.log(eqArrays(letterPositions("hello").e, [1]));
- * STEPS
- * FOR LOOP
- * Input key from string, value is based on index and not a country
- * push value int a value array
- */
-
-//working
+//function that takes in an object and a value and returns the first key that corresponds to that value.
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {

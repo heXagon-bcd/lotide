@@ -1,12 +1,4 @@
-/**
- * This method determines the tail values of an array
- * 
- * 
- * @param {array}insert array into argument
- * @return {tail values} will show the tail values of an object
- * 
- * 
- */
+//function that takes in an array and returns everything except the first element of the array.
 const tail = function(arr) {
   let a = arr.slice(1)
   return a;

@@ -8,12 +8,13 @@ const letterPositions = require('./letterPositions');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 const flatten = require('./flatten');
-const eqArrays = require('./eqArrays');
+const assertEqual = require('./assertEqual');
 const countOnly = require('./countOnly');
 const countLetters = require('./countLetters');
 const eqObjects = require('./eqObjects');
-const assertEqual = require('./assertEqual');
 const assertObjectsEqual = require('./assertObjectsEqual');
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
 
 
 module.exports = {
@@ -32,5 +33,7 @@ module.exports = {
   countLetters: countLetters,
   eqObjects: eqObjects,
   assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual
+  assertObjectsEqual: assertObjectsEqual,
+  assertArraysEqual: assertArraysEqual,
+  eqArrays: eqArrays
 };
